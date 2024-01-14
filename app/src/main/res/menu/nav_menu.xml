@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/internationalFoods"
+        android:icon="@drawable/planet"
+        android:title="@string/world" />
+
+    <item
+        android:id="@+id/aboutTheApp"
+        android:icon="@drawable/person"
+        android:title="@string/about"  />
+</menu>

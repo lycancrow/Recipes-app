@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.worldFoods.WorldFoods">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+
+
+        <!--Rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.01" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/worldFragmentEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <!--Componentes-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/worldTitle"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="22sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/worldFragmentEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/worldFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/worldFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/worldFragmentBeginRow1"
+            />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchBarCountry"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/search_bar_bg"
+            android:iconifiedByDefault="false"
+            android:queryHint="Buscar..."
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="@+id/worldFragmentEndRow2"
+            app:layout_constraintEnd_toEndOf="@+id/worldFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/worldFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/worldFragmentBeginRow2"
+            app:queryHint="Search..." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listCountry"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/worldFragmentEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/worldFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/worldFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/worldFragmentBeginRow3"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

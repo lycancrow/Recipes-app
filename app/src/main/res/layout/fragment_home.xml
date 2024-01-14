@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+        <!--Rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentBeginRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/homeFragmentEndRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <!--Componentes-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow1" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchBarHome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/search_bar_bg"
+            android:iconifiedByDefault="false"
+            android:queryHint="Buscar..."
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow2"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow2"
+            app:queryHint="Search..." />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/orderMessage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="left"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/orderMessage"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow3" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listOfCategories"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow4"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow4" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mealNotFound"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/orderNotFound"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow5"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/chefDisappointed"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/chef_about"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/homeFragmentEndRow6"
+            app:layout_constraintEnd_toEndOf="@+id/homeFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/homeFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/homeFragmentBeginRow6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.recipeDetails.RecipeDetails">
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Otros elementos de la interfaz de usuario si es necesario -->
+
+            <TextView
+                android:id="@+id/recipeTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spicy Arrabiata Penne"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:id="@+id/recipeImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:maxHeight="300dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/recipeInstructionsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

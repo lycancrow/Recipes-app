@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.aboutApp.AboutApp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Columns-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentBeginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentEndColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentBeginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentEndColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <!--Rows-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentBeginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentEndRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentBeginRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentEndRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.53" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentBeginRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/aboutFragmentEndRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <!--Componentes-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/aboutText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutFragmentEndRow1"
+            app:layout_constraintEnd_toEndOf="@+id/aboutFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/aboutFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/aboutFragmentBeginRow1"
+            android:text="@string/about"
+            android:fontFamily="@font/roboto"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutFragmentEndRow2"
+            app:layout_constraintEnd_toEndOf="@+id/aboutFragmentEndColumn1"
+            app:layout_constraintStart_toStartOf="@+id/aboutFragmentBeginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/aboutFragmentBeginRow2"
+            android:text="@string/aboutDescription"
+            android:fontFamily="@font/roboto"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutFragmentEndRow3"
+            app:layout_constraintEnd_toEndOf="@+id/aboutFragmentEndColumn2"
+            app:layout_constraintStart_toStartOf="@+id/aboutFragmentBeginColumn2"
+            app:layout_constraintTop_toTopOf="@+id/aboutFragmentBeginRow3"
+            android:src="@drawable/chef_about"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

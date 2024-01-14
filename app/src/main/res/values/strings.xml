@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RecepiesApp</string>
+    <!--Menu-->
+    <string name="home">Home</string>
+    <string name="world">World</string>
+    <string name="favs">Favs</string>
+    <string name="about">About</string>
+
+    <!--For Home Fragment-->
+    <string name="orderMessage">Ready to eat something?</string>
+    <string name="orderNotFound">Ups...\n\nIt looks like our chef does not know the recipe</string>
+
+    <!--For world foods-->
+    <string name="worldTitle">Which country you want to taste?</string>
+
+    <!--Favorites-->
+    <string name="favsMessage">You do not have any favorite meal yet.</string>
+
+    <!--About description-->
+    <string name="aboutDescription">This mobile application was developed by Felipe Cuervo. \n\nThis app calls the data from https://www.themealdb.com/\n\n This app is not for commercial purpuses.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
